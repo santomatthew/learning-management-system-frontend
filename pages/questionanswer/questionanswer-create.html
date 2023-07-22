@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <i class="bi bi-book"></i><a class="navbar-brand" href="#"></i>LMS</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Master Data
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./user/teacher-list.html">Teacher</a></li>
+                            <li><a class="dropdown-item" href="./classroom/classroom-list.html">Classroom</a></li>
+                            <li><a class="dropdown-item" href="./elearning/elearning-list.html">Elearning</a></li>
+                            <li><a class="dropdown-item" href="./task/task-list.html">Task</a></li>
+                    </li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./classroom/classroom-create.html">Classroom
+                        And Assign</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"
+                        href="./questionanswer/questionanswer-create.html">Question Answer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"
+                        href="../pages/candidateinformation/candidateinformation-create.html">Candidate
+                        Information</a>
+                </li>
+
+                </ul>
+                <div class="dropdown">
+                    <div class="btn-group">
+                        <i class="bi-person-circle" style="font-size: 2rem;" data-bs-toggle="dropdown"></i>
+                        <ul class="dropdown-menu dropdown-menu-lg-end">
+                            <li><a class="dropdown-item" href="./user/user-update.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="./user/user-changepassword.html">Change Password</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <h3>Answer The Quiz 1</h3>
+        <form action="../task/task-list.html">
+            <div class="row">
+                <div class="mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label for="answer" class="form-label">Question</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="mb-3">
+                                        <p>Kapan bahasa inggris diciptakan?</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label for="answer" class="form-label">Answer<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="answer" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="mb-3">
+                                        <label for="questionfile" class="form-label">Question File (Download File
+                                            Question
+                                            dibawah)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <a href="">question1.pdf</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label for="answerfile" class="form-label">Upload Answer</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <button type="button" class="btn btn-primary">Add Answer</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label for="questionfile" class="form-label">File<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="mb-3">
+                                        <input type="file" class="form-control" id="questionfile" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <button type="button" class="btn btn-danger">Delete File</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

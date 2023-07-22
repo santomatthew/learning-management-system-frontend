@@ -1,0 +1,22 @@
+.image-size {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.elearning-card:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+.elearning-menu-pict {
+    object-fit: cover;
+}
+
+
+.commentator-pict {
+    max-width: 3rem;
+    max-height: 3rem;
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
