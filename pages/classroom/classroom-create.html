@@ -21,7 +21,7 @@
                 <i class="bi bi-book"></i><a class="navbar-brand" href="#"></i>LMS</a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../dashboard.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -29,35 +29,37 @@
                             Master Data
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./user/teacher-list.html">Teacher</a></li>
-                            <li><a class="dropdown-item" href="./classroom/classroom-list.html">Classroom</a></li>
-                        </ul>
+                            <li><a class="dropdown-item" href="../user/teacher-list.html">Teacher</a></li>
+                            <li><a class="dropdown-item" href="./classroom-list.html">Classroom</a></li>
+                            <li><a class=" dropdown-item" href="../elearning/elearning-list.html">Elearning</a></li>
+                            <li><a class="dropdown-item" href="../task/task-list.html">Task</a></li>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href="./candidateassign/candidateassign-create.html">Create Class and Assign</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./review/review-list.html">Review</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href="../pages/candidateinformation/candidateinformation-create.html">Candidate
-                            Information</a>
-                    </li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Classroom
+                        And Assign</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"
+                        href="../questionanswer/pre-questionanswer.html">Question Answer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../review/review-list.html">Review</a>
+                </li>
 
                 </ul>
                 <div class="dropdown">
                     <div class="btn-group">
                         <i class="bi-person-circle" style="font-size: 2rem;" data-bs-toggle="dropdown"></i>
                         <ul class="dropdown-menu dropdown-menu-lg-end">
-                            <li><a class="dropdown-item" href="./user/user-update.html">Profile</a></li>
-                            <li><a class="dropdown-item" href="./user/user-changepassword.html">Change Password</a>
+                            <li><a class="dropdown-item" href="../user/user-update.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="../user/user-changepassword.html">Change Password</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+                            <li><a class="dropdown-item" href="../../index.html">Logout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -76,7 +78,8 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="mb-3">
-                                <label for="class-name" class="form-label">Classroom Name</label>
+                                <label for="class-name" class="form-label">Classroom Name<span
+                                        class="text-danger">*</span></label>
                             </div>
                         </div>
                         <div class="col-md-9">
@@ -86,7 +89,8 @@
                         </div>
                         <div class="col-md-3">
                             <div class="mb-3">
-                                <label for="class-code" class="form-label">Classroom Code</label>
+                                <label for="class-code" class="form-label">Classroom Code<span
+                                        class="text-danger">*</span></label>
                             </div>
                         </div>
                         <div class="col-md-9">
@@ -97,7 +101,7 @@
 
                         <div class="col-md-3">
                             <div class="mb-3">
-                                <label for="photo" class="form-label">Photo</label>
+                                <label for="photo" class="form-label">Photo<span class="text-danger">*</span></label>
                             </div>
                         </div>
 
@@ -109,16 +113,15 @@
 
                         <div class="col-md-3">
                             <div class="mb-3">
-                                <label for="class-code" class="form-label">Teacher</label>
+                                <label for="class-code" class="form-label">Teacher<span
+                                        class="text-danger">*</span></label>
                             </div>
                         </div>
                         <div class="col-md-9">
                             <div class="mb-3">
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Select teacher</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option value="1">Santo Matthew</option>
                                 </select>
                             </div>
                         </div>
