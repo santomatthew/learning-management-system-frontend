@@ -18,5 +18,19 @@
     max-height: 3rem;
     border-radius: 50%;
     border: 1px solid black;
+}
 
+.container-chat-bg {
+    border: 0.3rem solid grey;
+    background-color: white
+}
+
+.forum-header {
+    background-color: rgb(231, 231, 231);
+    border: 1px solid grey;
+    margin-bottom: 0.5rem;
+}
+
+.chat-bg {
+    background-color: rgb(231, 231, 231);
 }
